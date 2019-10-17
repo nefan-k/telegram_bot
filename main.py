@@ -109,6 +109,20 @@ def main_handler(message):
         markup.add(*buttons)
         bot.send_message(message.from_user.id, 'Choose a category:', reply_markup=markup)
         states[message.from_user.id] = CATEGORY_STATE
+    elif 'cat' in message.text.lower():
+      bot.send_photo(chat_id = message.from_user.id, photo = 'https://ibb.co/hZn9hCT', caption = 'Here it is!')
+    elif 'yeet bebe' in message.text.lower():
+      bot.send_photo(chat_id = message.from_user.id, photo = 'https://pics.me.me/thumb_airbag-yeet-le-b%C3%A9b%C3%A9-get-naenaed-57755293.png', caption = "Yes let's yeet 'le bebe'")
+    elif 'easter egg' in message.text.lower():
+      bot.send_photo(chat_id = message.from_user.id, photo = 'https://media.makeameme.org/created/russian-tank-1918.jpg', caption = 'TU TUTU TUTUTUTUTUTUTU TU TUTU TUTUTUTUTUTU TUTUTUTUTUTUTUTUTUTUTU TUTUTUTUTUTUTUTU!')
+    elif 'suspicious behavior' in message.text.lower():
+      bot.send_photo(chat_id = message.from_user.id, photo = 'https://photos.google.com/share/AF1QipOeE5OzdzvOMWTVr_9MYDyk7wCXqt1kUdZ1GKnwPPA7JEzDADpY5BRFSWdQkb7ppw?key=dWtjekhtLVEyVVJPVHgzMXpRSDFWU2ZDblRnMkh3', caption = 'Ladies & gentlemen, we got him!')
+    elif 'vincent' in message.text.lower():
+      bot.send_photo(chat_id = message.from_user.id, photo = 'https://photos.app.goo.gl/VQyyxmVmJy9FQqVHA', caption = "I'm wondering if somebody found the Vincent's easter egg?")
+    elif 'jojo' in message.text.lower():
+      bot.send_photo(chat_id = message.from_user.id, photo = 'http://memesem.com/wp-content/uploads/2019/04/dio-hijacks-the-jojo-approach-memes-with-a-new-panel.png', caption = "Oh? You're Approaching Me?")
+    elif 'gnome' in message.text.lower():
+      bot.send_photo(chat_id = message.from_user.id, photo = 'https://imgflip.com/i/3dj797', caption = "Some intelectual memes...")
     else:
         bot.reply_to(message, "I don't understand you")
 
